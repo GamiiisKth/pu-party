@@ -14,8 +14,38 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <dependencies>
+    <properties>
+        <backend.party.version>0.0.1-SNAPSHOT</backend.party.version>
+    </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>se.joshua</groupId>
+            <artifactId>backend-component-party-client</artifactId>
+            <version>${backend.party.version}</version>
+        </dependency>
+         <dependency>
+            <groupId>se.joshua</groupId>
+            <artifactId>backend-component-party-service-impl</artifactId>
+            <version>${backend.party.version}</version>
+        </dependency>
+         <dependency>
+            <groupId>se.joshua</groupId>
+            <artifactId>backend-component-party-dao-impl</artifactId>
+            <version>${backend.party.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.gigaspaces</groupId>
+            <artifactId>gs-runtime</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.gigaspaces</groupId>
+            <artifactId>gs-openspaces</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
 
