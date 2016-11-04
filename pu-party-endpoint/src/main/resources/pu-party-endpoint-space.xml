@@ -13,10 +13,10 @@
     <os-core:distributed-tx-manager id="transactionManager"/>
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
-    <os-core:giga-space id="partyGigaspace"
-                        space="partySpace"
+    <os-core:giga-space id="clientGigaspace"
+                        space="clientSpace"
                         tx-manager="transactionManager"/>
 
-    <os-core:space id="partySpace" url="/./party"/>
+    <os-core:space id="clientSpace" url="/./client"/>
 
 </beans>

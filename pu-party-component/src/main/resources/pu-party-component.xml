@@ -5,7 +5,7 @@
 
 <!-- component resources -->
 
-    <import resource="classpath*:party-component-client.xml"/>
+    <import resource="classpath*:component-party-client.xml"/>
     <import resource="classpath*:component-party-service.xml"/>
     <import resource="classpath*:component-party-dao.xml"/>
 

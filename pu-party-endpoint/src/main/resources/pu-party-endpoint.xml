@@ -5,22 +5,8 @@
 
 <!-- component resources -->
 
-    <import resource="classpath*:component-party-client.xml"/>
-    <import resource="classpath*:component-party-service.xml"/>
-    <import resource="classpath*:component-party-dao.xml"/>
+   <import resource="classpath*:party-remote-configuration.xml"/>
 
 
-    <!-- pu resources-->
-    <import resource="classpath*:pu-party-space.xml"/>
-
-
-
-    <bean class="org.openspaces.remoting.SpaceRemotingServiceExporter">
-        <property name="services">
-            <list>
-                <ref bean="playerService"/>
-            </list>
-        </property>
-    </bean>
 
 </beans>
